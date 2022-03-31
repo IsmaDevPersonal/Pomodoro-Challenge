@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navegacion_fragments"
+    app:startDestination="@id/authActivity">
+
+    <fragment
+        android:id="@+id/authActivity"
+        android:name="com.ismadev.pomodoro.AuthActivity"
+        android:label="AuthActivity" >
+        <action
+            android:id="@+id/action_authActivity_to_editPomodoroTask"
+            app:destination="@id/editPomodoroTask" />
+    </fragment>
+    <fragment
+        android:id="@+id/editPomodoroTask"
+        android:name="com.ismadev.pomodoro.EditPomodoroTask"
+        android:label="EditPomodoroTask" />
+</navigation>
